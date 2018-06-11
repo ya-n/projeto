@@ -12,7 +12,8 @@ namespace Model
         [Required, StringLength(11)]
         public int CPF { get; set; }
         
-        public FichaMedica fichamedica { get; set; }
+        public FichaMedica fichamedica { get; set; } 
+
 
     }
 }
