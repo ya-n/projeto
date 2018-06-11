@@ -2,7 +2,9 @@
 {
     public class FichaMedica 
     {
-        private Paciente p;
+        public int FichaID { get; set; }
+
+
 
     }
 }
