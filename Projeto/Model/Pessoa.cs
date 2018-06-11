@@ -19,7 +19,7 @@ namespace Model
         private string UF { get; set; }
         private string Cidade { get; set; }
         
-
+    
 
     }
 }
