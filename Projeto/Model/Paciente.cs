@@ -10,7 +10,7 @@ namespace Model
     {
         [Key]
         public int UsuarioID { get; set; }
-        public int FichaMedica { get; set}
+        public int FichaMedica { get; set} 
         
         //public int FichaID { get; set; } 
         //public virtual FichaMedica _FichaMedica { get; set; }
