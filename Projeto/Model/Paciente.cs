@@ -9,11 +9,11 @@ namespace Model
     public class Paciente : Pessoa
     {
         [Key]
-        [Required, StringLength(11)]
-        public int CPF { get; set; }
+        public int UsuarioID { get; set; }
+        public int FichaMedica { get; set}
         
-        public int FichaID { get; set; } 
-        public virtual FichaMedica _FichaMedica { get; set; }
+        //public int FichaID { get; set; } 
+        //public virtual FichaMedica _FichaMedica { get; set; }
 
 
     }

@@ -9,7 +9,7 @@ namespace Model
     class Medico : Pessoa
     {
         [Key]
-        [Required, StringLength(10)]
+        [StringLength(10)]
         private string CRM { get; set; }
 
     }

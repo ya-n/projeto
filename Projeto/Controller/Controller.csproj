@@ -40,12 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MedicoController.cs" />
-    <Compile Include="PacienteController.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="MedicosController.cs" />
+    <Compile Include="PacientesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DAL\" />
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{D1BBF79F-CCB4-4B01-B126-0C971230DD68}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

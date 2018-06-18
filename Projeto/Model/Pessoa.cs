@@ -12,7 +12,6 @@ namespace Model
         [Required, StringLength(30)]
         private string Nome { get; set; }
         private string Nasc { get; set; }
-        [Key]
         [Required, StringLength(11)]
         private int CPF { get; set; }
         private string End { get; set; }
