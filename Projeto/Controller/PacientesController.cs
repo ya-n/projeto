@@ -16,7 +16,7 @@ namespace Controller
             {
                 entity.Ativo = true;
                 contexto.Pacientes.Add(entity);
-                contexto.SaveChanges();
+                contexto.SaveChanges(); 
             }
 
             public void Atualizar(Paciente entity)
