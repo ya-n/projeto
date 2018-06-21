@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid Margin="-326,-213,-242,-193">
-        <Button Content="Menu - Pacientes" HorizontalAlignment="Left" Margin="395,380,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_1"/>
-        <Button Content="Menu - Médicos" HorizontalAlignment="Left" Margin="630,380,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button Content="Menu - Pacientes" HorizontalAlignment="Left" Margin="395,380,0,0" VerticalAlignment="Top" Width="145" Click="Button_MenuPaciente"/>
+        <Button Content="Menu - Médicos" HorizontalAlignment="Left" Margin="630,380,0,0" VerticalAlignment="Top" Width="145" Click="Button_MenuMedico"/>
     </Grid>
 </Window>

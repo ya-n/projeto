@@ -25,14 +25,16 @@ namespace ViewProjeto
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_MenuPaciente(object sender, RoutedEventArgs e)
         {
-
+            MenuPaciente mp = new MenuPaciente();
+            mp.ShowDialog();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_MenuMedico(object sender, RoutedEventArgs e)
         {
-
+            MenuMedico mm = new MenuMedico();
+            mm.ShowDialog();
         }
     }
 }
