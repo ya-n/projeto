@@ -10,7 +10,7 @@ namespace Model
     {
         [Key]
         [StringLength(10)]
-        private string CRM { get; set; }
+        public string CRM { get; set; }
 
     }
 }

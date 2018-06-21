@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model;
+using System.Data.Entity;
 
 namespace Controller.DAL
 {
@@ -14,12 +16,22 @@ namespace Controller.DAL
             {
 
             }
-
+            public DbSet<Pessoa> Pessoas { get; set; }
             public DbSet<Paciente> Pacientes { get; set; }
 
             public DbSet<Medico> Medicos { get; set; }
 
            // public DbSet<Categoria> Categorias { get; set; }
         }
+
+        //internal object Entry(Paciente entity)
+        //{
+            //throw new NotImplementedException();
+        //}
+
+        //internal void SaveChanges()
+        //{
+            //throw new NotImplementedException();
+        //}
     }
 }

@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller.DAL;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,21 +31,21 @@ namespace Controller
                 return contexto.Pacientes.Find(id);
             }
 
-            public void Excluir(int id)
-            {
-                Pacientes p = BuscarPorID(id);
+           // public void Excluir(int id)
+            //{
+               // Pacientes p = BuscarPorID(id);
 
-                if (p != null)
-                {
-                    contexto.Pacientes.Remove(u);
-                    contexto.SaveChanges();
-                }
-            }
+               // if (p != null)
+                //{
+                //    contexto.Pacientes.Remove(p);
+               //     contexto.SaveChanges();
+               // }
+            //}
 
-            public IList<Paciente> ListarPorNome(string nome)
-            {
-                return contexto.Pacientes.Where(p => p.Nome.ToLower() == nome.ToLower()).ToList();
-            }
+            //public IList<Paciente> ListarPorNome(string nome)
+           // {
+          //   return contexto.Pacientes.Where(p => p.Nome.ToLower() == nome.ToLower()).ToList();
+         //}
 
             public IList<Paciente> ListarTodos()
             {
