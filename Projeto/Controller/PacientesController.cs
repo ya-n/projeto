@@ -1,4 +1,4 @@
-﻿                       using Controller.DAL;
+﻿using Controller.DAL;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class PacientesController 
+    public class PacientesController 
     {
         
             private Contexto contexto = new Contexto();
 
-            public void Adicionar(Paciente entity)
+            public void Cadastrar(Paciente entity)
             {
                 contexto.Pacientes.Add(entity);
                 contexto.SaveChanges(); 

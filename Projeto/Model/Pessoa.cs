@@ -14,7 +14,7 @@ namespace Model
         public string Nome { get; set; }
         public string Nasc { get; set; }
         [Required, StringLength(11)]   
-        public int CPF { get; set; }
+        public string CPF { get; set; }
         public string End { get; set; }
         public string UF { get; set; }
         public string Cidade { get; set; }

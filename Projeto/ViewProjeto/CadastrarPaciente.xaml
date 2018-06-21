@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="CadastrarPaciente" Height="300" Width="300">
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="70,3,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.242,0.261"/>
         
+        <TextBlock HorizontalAlignment="Left" Margin="10,31,0,0" TextWrapping="Wrap" Text="CPF:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="70,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Data de Nascimento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNasc" HorizontalAlignment="Left" Height="23" Margin="141,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        
+        <TextBox x:Name="txtUF" HorizontalAlignment="Left" Height="23" Margin="10,89,0,0" TextWrapping="Wrap" Text="UF:" VerticalAlignment="Top" Width="35"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="70,89,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Cidade:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="70,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,146,0,0" TextWrapping="Wrap" Text="Endereço:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEnd" HorizontalAlignment="Left" Height="23" Margin="70,145,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="33,189,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="166,189,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+
+
+
+
     </Grid>
 </Window>
