@@ -32,7 +32,7 @@ namespace Controller
 
         public void Excluir(string crm)
         {
-        Medicos m = BuscarPorID(crm);
+        Medico m = BuscarPorID(crm);
 
         if (m != null)
         {
@@ -50,9 +50,5 @@ namespace Controller
         {
             return contexto.Medicos.ToList();
         }
-    }
-}
-
-
     }
 }

@@ -8,30 +8,17 @@ using System.Data.Entity;
 
 namespace Controller.DAL
 {
-    class Contexto
+    class Contexto : DbContext
     {
-        class Contexto //: DbContext
+        public Contexto() : base("strConn")
         {
-            public Contexto() : base("strConn")
-            {
 
-            }
-            public DbSet<Pessoa> Pessoas { get; set; }
-            public DbSet<Paciente> Pacientes { get; set; }
-
-            public DbSet<Medico> Medicos { get; set; }
-
-           // public DbSet<Categoria> Categorias { get; set; }
         }
+        public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Paciente> Pacientes { get; set; }
 
-        //internal object Entry(Paciente entity)
-        //{
-            //throw new NotImplementedException();
-        //}
+        public DbSet<Medico> Medicos { get; set; }
 
-        //internal void SaveChanges()
-        //{
-            //throw new NotImplementedException();
-        //}
+        // public DbSet<Categoria> Categorias { get; set; }
     }
 }

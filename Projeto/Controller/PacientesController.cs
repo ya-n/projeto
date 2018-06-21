@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class PacientesController : //IBaseController<Usuario>
+    class PacientesController 
     {
         
             private Contexto contexto = new Contexto();
 
             public void Adicionar(Paciente entity)
             {
-                entity.Ativo = true;
                 contexto.Pacientes.Add(entity);
                 contexto.SaveChanges(); 
             }
@@ -53,4 +52,3 @@ namespace Controller
             }
         }
     }
-}
