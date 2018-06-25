@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Controller;
+using Model;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace ViewProjeto
 {
@@ -22,6 +14,19 @@ namespace ViewProjeto
         public ListarPaciente()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            PacientesController pacientesController = new PacientesController();
+            dgPacientes.ItemsSource = pacientesController.ListarTodos();
+        }
+
+        private void dgPacientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid dg = ((DataGrid)sender);
+
+            CadastrarPaciente p = (Paciente)dg.Items[dg.SelectedIndex];
         }
     }
 }

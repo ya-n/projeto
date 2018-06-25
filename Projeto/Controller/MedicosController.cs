@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class MedicosController
+    public class MedicosController
     {
         private Contexto contexto = new Contexto();
 
-        public void Adicionar(Medico entity)
+        public void Cadastrar(Medico entity)
         {
             //entity.Ativo = true;
             contexto.Medicos.Add(entity);

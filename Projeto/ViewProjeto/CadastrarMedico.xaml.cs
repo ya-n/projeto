@@ -23,18 +23,18 @@ namespace ViewProjeto
             {
                 Medico medico = new Medico();
 
-                paciente.Nome = txtNome.Text;
-                paciente.CPF = txtCPF.Text;
-                paciente.Nasc = txtNasc.Text;
+                medico.Nome = txtNome.Text;
+                medico.CPF = txtCPF.Text;
+                medico.Nasc = txtNasc.Text;
 
-                PacientesController pacientesController = new PacientesController();
-                pacientesController.Cadastrar(paciente);
+                MedicosController medicosController = new MedicosController();
+                medicosController.Cadastrar(medico);
 
-                MessageBox.Show("Paciente salvo com sucesso");
+                MessageBox.Show("Mé7dico salvo com sucesso");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao salvar Paciente (" + ex.Message + ")");
+                MessageBox.Show("Erro ao salvar Médico (" + ex.Message + ")");
             }
         }
 

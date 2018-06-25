@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewProjeto"
         mc:Ignorable="d"
-        Title="ListarPaciente" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        Title="ListarPaciente" Height="300" Width="300" Loaded="Window_Loaded">
+    <DataGrid x:Name="dgPacientes" HorizontalAlignment="Left" Margin="19,22,0,0" VerticalAlignment="Top" Height="185" Width="220"/>
+
 </Window>

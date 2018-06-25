@@ -12,6 +12,5 @@ namespace Model
         [Key]
         [StringLength(10)]
         public string CRM { get; set; }
-
     }
 }
