@@ -1,36 +1,27 @@
-﻿using Controller;
+﻿using System;
 using Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Controller;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ViewProjeto
 {
     /// <summary>
-    /// Interaction logic for CadastrarPaciente.xaml
+    /// Interaction logic for CadastrarMedico.xaml
     /// </summary>
-    public partial class CadastrarPaciente : Window
+    public partial class CadastrarMedico : Window
     {
-        public CadastrarPaciente()
+        public CadastrarMedico()
         {
             InitializeComponent();
         }
+
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                Paciente paciente = new Paciente();
+                Medico medico = new Medico();
 
                 paciente.Nome = txtNome.Text;
                 paciente.CPF = txtCPF.Text;
@@ -51,7 +42,6 @@ namespace ViewProjeto
         {
             this.Close();
         }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             comboBox.Items.Add("AC");

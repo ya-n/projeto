@@ -64,7 +64,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CadastrarMedico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadastrarPaciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarMedico.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,8 +88,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CadastrarMedico.xaml.cs">
+      <DependentUpon>CadastrarMedico.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarPaciente.xaml.cs">
       <DependentUpon>CadastrarPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMedico.xaml.cs">
+      <DependentUpon>ListarMedico.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarPaciente.xaml.cs">
       <DependentUpon>ListarPaciente.xaml</DependentUpon>
