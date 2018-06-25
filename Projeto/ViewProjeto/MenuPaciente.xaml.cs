@@ -23,9 +23,10 @@ namespace ViewProjeto
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnListar (object sender, RoutedEventArgs e)
         {
-
+            ListarPaciente telaListarPaciente = new ListarPaciente();
+            telaListarPaciente.ShowDialog();
         }
     }
 

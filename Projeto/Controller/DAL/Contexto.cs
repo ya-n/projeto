@@ -14,11 +14,10 @@ namespace Controller.DAL
         {
 
         }
-        public DbSet<Pessoa> Pessoas { get; set; }
+        //public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
 
         public DbSet<Medico> Medicos { get; set; }
-
-        // public DbSet<Categoria> Categorias { get; set; }
+        
     }
 }

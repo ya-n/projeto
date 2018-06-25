@@ -26,6 +26,10 @@ namespace ViewProjeto
                 medico.Nome = txtNome.Text;
                 medico.CPF = txtCPF.Text;
                 medico.Nasc = txtNasc.Text;
+                medico.UF = txtUF.Text;
+                medico.Cidade = txtCidade.Text;
+                medico.End = txtEnd.Text;
+                medico.CRM = txtCRM.Text;
 
                 MedicosController medicosController = new MedicosController();
                 medicosController.Cadastrar(medico);

@@ -25,7 +25,7 @@ namespace ViewProjeto
         {
             DataGrid dg = ((DataGrid)sender);
 
-            CadastrarMedico m = (Medico)dg.Items[dg.SelectedIndex];
+            Medico m = (Medico)dg.Items[dg.SelectedIndex];
 
 
         }

@@ -35,6 +35,9 @@ namespace ViewProjeto
                 paciente.Nome = txtNome.Text;
                 paciente.CPF = txtCPF.Text;
                 paciente.Nasc = txtNasc.Text;
+                paciente.UF = txtUF.Text;
+                paciente.Cidade = txtCidade.Text;
+                paciente.End = txtEnd.Text;
 
                 PacientesController pacientesController = new PacientesController();
                 pacientesController.Cadastrar(paciente);

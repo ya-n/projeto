@@ -18,9 +18,10 @@ namespace ViewProjeto
             mm.ShowDialog();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btnListar (object sender, RoutedEventArgs e)
         {
-
+            ListarMedico telaListarMedico = new ListarMedico();
+            telaListarMedico.ShowDialog();
         }
     }
 }

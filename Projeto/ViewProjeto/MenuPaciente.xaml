@@ -8,7 +8,7 @@
         Title="MenuPaciente" Height="300" Width="300">
     <Grid>
         <Button Content="Cadastrar Paciente" HorizontalAlignment="Left" Margin="83,35,0,0" VerticalAlignment="Top" Width="130" Click="btnCadastrarPaciente_click"/>
-        <Button Content="Listar Paciente" HorizontalAlignment="Left" Margin="83,92,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button Content="Listar Paciente" HorizontalAlignment="Left" Margin="83,92,0,0" VerticalAlignment="Top" Width="130" Click="btnListar"/>
 
     </Grid>
 </Window>
