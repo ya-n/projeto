@@ -35,7 +35,7 @@ namespace ViewProjeto
                 paciente.Nome = txtNome.Text;
                 paciente.CPF = txtCPF.Text;
                 paciente.Nasc = txtNasc.Text;
-                paciente.UF = txtUF.Text;
+                paciente.UF = cbUF.SelectedValue.ToString();
                 paciente.Cidade = txtCidade.Text;
                 paciente.End = txtEnd.Text;
 
@@ -49,7 +49,7 @@ namespace ViewProjeto
                 MessageBox.Show("Erro ao salvar Paciente (" + ex.Message + ")");
             }
         }
-
+         
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -57,33 +57,33 @@ namespace ViewProjeto
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            comboBox.Items.Add("AC");
-            comboBox.Items.Add("AL");
-            comboBox.Items.Add("AP");
-            comboBox.Items.Add("AM");
-            comboBox.Items.Add("BA");
-            comboBox.Items.Add("CE");
-            comboBox.Items.Add("DF");
-            comboBox.Items.Add("ES");
-            comboBox.Items.Add("GO");
-            comboBox.Items.Add("MA");
-            comboBox.Items.Add("MT");
-            comboBox.Items.Add("MS");
-            comboBox.Items.Add("MG");
-            comboBox.Items.Add("PA");
-            comboBox.Items.Add("PB");
-            comboBox.Items.Add("PR");
-            comboBox.Items.Add("PE");
-            comboBox.Items.Add("PI");
-            comboBox.Items.Add("RR");
-            comboBox.Items.Add("RO");
-            comboBox.Items.Add("RJ");
-            comboBox.Items.Add("RN");
-            comboBox.Items.Add("RS");
-            comboBox.Items.Add("SC");
-            comboBox.Items.Add("SP");
-            comboBox.Items.Add("SE");
-            comboBox.Items.Add("TO");
+            cbUF.Items.Add("AC");
+            cbUF.Items.Add("AL");
+            cbUF.Items.Add("AP");
+            cbUF.Items.Add("AM");
+            cbUF.Items.Add("BA");
+            cbUF.Items.Add("CE");
+            cbUF.Items.Add("DF");
+            cbUF.Items.Add("ES");
+            cbUF.Items.Add("GO");
+            cbUF.Items.Add("MA");
+            cbUF.Items.Add("MT");
+            cbUF.Items.Add("MS");
+            cbUF.Items.Add("MG");
+            cbUF.Items.Add("PA");
+            cbUF.Items.Add("PB");
+            cbUF.Items.Add("PR");
+            cbUF.Items.Add("PE");
+            cbUF.Items.Add("PI");
+            cbUF.Items.Add("RR");
+            cbUF.Items.Add("RO");
+            cbUF.Items.Add("RJ");
+            cbUF.Items.Add("RN");
+            cbUF.Items.Add("RS");
+            cbUF.Items.Add("SC");
+            cbUF.Items.Add("SP");
+            cbUF.Items.Add("SE");
+            cbUF.Items.Add("TO");
         }
     }
 }

@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
        
         [Required, StringLength(30)]
         public string Nome { get; set; }
         public string Nasc { get; set; }
-        [Key]
         [Required, StringLength(11)]   
         public string CPF { get; set; }
         public string End { get; set; }
