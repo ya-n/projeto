@@ -46,7 +46,9 @@ namespace ViewProjeto
         {
             this.Close();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+       
+
+        private void Window_Loaded_Loaded(object sender, RoutedEventArgs e)
         {
             comboBox.Items.Add("AC");
             comboBox.Items.Add("AL");
