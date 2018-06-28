@@ -26,7 +26,7 @@ namespace ViewProjeto
                 medico.Nome = txtNome.Text;
                 medico.CPF = txtCPF.Text;
                 medico.Nasc = txtNasc.Text;
-                medico.UF = txtUF.Text;
+                medico.UF = cbUF.SelectedValue.ToString();
                 medico.Cidade = txtCidade.Text;
                 medico.End = txtEnd.Text;
                 medico.CRM = txtCRM.Text;

@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using Controller;
 using Model;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ViewProjeto
 {
@@ -34,14 +23,16 @@ namespace ViewProjeto
             try
             {
 
-                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID.Text));
-                cliente.Nome = txtNome.Text;
-                cliente.CPF = txtCPF.Text;
-                cliente.Email = txtEmail.Text;
-                cliente.Telefone = txtTelefone.Text;
-                controllerCliente.AlterCliente(cliente);
+                medico = medicosController.BuscarPorID(Convert.ToString(txtCRM.Text));
+                txtNome.Text = medico.Nome;
+                txtCPF.Text = medico.CPF;
+                txtNasc.Text = medico.Nasc;
+                txtUF.Text = medico.UF;
+                txtCidade.Text = medico.Cidade;
+                txtEnd.Text = medico.End;
+                txtCRM.Text = medico.CRM;
 
-                MessageBox.Show("Cliente alterado com sucesso!! ");
+                MessageBox.Show("Cadastro do Médico alterado. ");
                 
 
 
@@ -49,7 +40,7 @@ namespace ViewProjeto
             catch (Exception ex)
             {
 
-                MessageBox.Show("Erro ao alterar Cliente (" + ex.Message + ")");
+                MessageBox.Show("Erro ao alterar cadastro do Médico (" + ex.Message + ")");
             }
         }
 
@@ -57,17 +48,18 @@ namespace ViewProjeto
         {
             try
             {
-                cliente = controllerCliente.BuscarClientePorID(Convert.ToInt32(txtID.Text));
-                if (cliente != null)
-                    controllerCliente.Excluir((Convert.ToInt32(txtID.Text)));
-                MessageBox.Show("Cliente excluido com sucesso!");
-                dgDadosCliente.Items.Refresh();
+                medico = medicosController.BuscarPorID(Convert.ToString(txtCRM.Text));
+
+                if (medico != null)
+                medicosController.Excluir((Convert.ToString(txtCRM.Text)));
+                MessageBox.Show("O Médico foi excluido.");
+               
 
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show("Erro ao excluir Cliente (" + ex.Message + ")");
+                MessageBox.Show("Erro ao excluir o Médico (" + ex.Message + ")");
             }
         }
 
