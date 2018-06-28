@@ -38,6 +38,8 @@ namespace ViewProjeto
                 paciente.UF = cbUF.SelectedValue.ToString();
                 paciente.Cidade = txtCidade.Text;
                 paciente.End = txtEnd.Text;
+                paciente.FichaMedica = txtObs.Text;
+                
 
                 PacientesController pacientesController = new PacientesController();
                 pacientesController.Cadastrar(paciente);

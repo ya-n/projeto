@@ -28,6 +28,12 @@ namespace ViewProjeto
             ListarPaciente telaListarPaciente = new ListarPaciente();
             telaListarPaciente.ShowDialog();
         }
+
+        private void btnEditar(object sender, RoutedEventArgs e)
+        {
+            EditarPaciente editarPaciente = new EditarPaciente();
+            editarPaciente.ShowDialog();
+        }
     }
 
  }

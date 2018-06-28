@@ -23,5 +23,11 @@ namespace ViewProjeto
             ListarMedico telaListarMedico = new ListarMedico();
             telaListarMedico.ShowDialog();
         }
+
+        private void btnEditar(object sender, RoutedEventArgs e)
+        {
+            EditarMedico editarMedico = new EditarMedico();
+            editarMedico.ShowDialog();
+        }
     }
 }

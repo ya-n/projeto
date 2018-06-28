@@ -25,7 +25,12 @@ namespace Controller
                 contexto.SaveChanges();
             }
 
-            public Paciente BuscarPorID(int id)
+        public void EditarPaciente(Paciente entity)
+        {
+            contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            contexto.SaveChanges();
+        }
+        public Paciente BuscarPorID(int id)
             {
                 return contexto.Pacientes.Find(id);
             }

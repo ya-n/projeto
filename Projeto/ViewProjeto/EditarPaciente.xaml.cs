@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Controller;
+using Model;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -19,6 +21,8 @@ namespace ViewProjeto
     /// </summary>
     public partial class EditarPaciente : Window
     {
+        Paciente paciente= new Paciente();
+        PacientesController pacientesController = new PacientesController();
         public EditarPaciente()
         {
             InitializeComponent();

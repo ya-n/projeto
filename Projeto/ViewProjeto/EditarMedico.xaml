@@ -26,7 +26,7 @@
         <TextBox x:Name="txtEnd" HorizontalAlignment="Left" Height="23" Margin="70,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="15,174,0,0" TextWrapping="Wrap" Text="CRM:" VerticalAlignment="Top" RenderTransformOrigin="0,-0.312"/>
-        <TextBox x:Name="txtCRM" HorizontalAlignment="Left" Height="23" Margin="90,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" DragEnter="txtCRM_DragEnter"/>
+        <TextBox x:Name="txtCRM" HorizontalAlignment="Left" Height="23" Margin="90,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" LostFocus="txtCRM_LostFocus"/>
         
         <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="24,220,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btnSalvar_Click" />
         <Button x:Name="btnExcluir" Content="Excluir Médico" HorizontalAlignment="Left" Margin="140,220,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btnExcluir_Click" />
