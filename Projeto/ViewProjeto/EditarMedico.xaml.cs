@@ -33,6 +33,8 @@ namespace ViewProjeto
                 medico.End = txtEnd.Text;
                 medico.CRM = txtCRM.Text;
 
+                medicosController.Atualizar(medico);
+
                 MessageBox.Show("Cadastro do Médico alterado. ");
 
 

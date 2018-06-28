@@ -25,6 +25,12 @@ namespace Controller
             contexto.SaveChanges();
         }
 
+        public void EditarMedico(Medico entity)
+        {
+            contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            contexto.SaveChanges();
+        }
+
         public Medico BuscarPorID(string crm)
         {
             return contexto.Medicos.Find(crm);
