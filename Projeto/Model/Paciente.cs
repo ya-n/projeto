@@ -11,7 +11,7 @@ namespace Model
     {
         [Key]
         public int UsuarioID { get; set; }
-        public int FichaMedica { get; set; }
+       // public int FichaMedica { get; set; }
 
         
         
