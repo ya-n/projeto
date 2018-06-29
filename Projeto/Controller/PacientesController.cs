@@ -35,16 +35,16 @@ namespace Controller
                 return contexto.Pacientes.Find(id);
             }
 
-           // public void Excluir(int id)
-            //{
-               // Pacientes p = BuscarPorID(id);
+            public void Excluir(int id)
+            {
+                Paciente p = BuscarPorID(id);
 
-               // if (p != null)
-                //{
-                //    contexto.Pacientes.Remove(p);
-               //     contexto.SaveChanges();
-               // }
-            //}
+                if (p != null)
+                {
+                    contexto.Pacientes.Remove(p);
+                    contexto.SaveChanges();
+                }
+            }
 
             //public IList<Paciente> ListarPorNome(string nome)
            // {

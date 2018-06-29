@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewProjeto"
         mc:Ignorable="d"
-        Title="EditarPaciente" Height="300" Width="300">
-    <Grid>
-        
+        Title="EditarPaciente" Height="387.588" Width="346.378">
+    <Grid Margin="0,0,-57,-58">
+        <TextBlock HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="70,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" LostFocus="txtID_LostFocus"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="70,27,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="170" RenderTransformOrigin="-0.242,0.261"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,55,0,0" TextWrapping="Wrap" Text="CPF:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="70,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,83,0,0" TextWrapping="Wrap" Text="Data de Nascimento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNasc" HorizontalAlignment="Left" Height="23" Margin="141,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock x:Name="txtUF" HorizontalAlignment="Left" Height="23" Margin="10,110,0,0" TextWrapping="Wrap" Text="UF:" VerticalAlignment="Top" Width="35"/>
+        <ComboBox x:Name="cbUF" HorizontalAlignment="Left" Margin="70,111,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,138,0,0" TextWrapping="Wrap" Text="Cidade:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="70,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,166,0,0" TextWrapping="Wrap" Text="Endereço:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEnd" HorizontalAlignment="Left" Height="23" Margin="70,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,194,0,0" TextWrapping="Wrap" Text="Obs: " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtObs" HorizontalAlignment="Left" Height="88" Margin="50,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255"/>
+
+        <Button x:Name="btnEditar" Content="Salvar Alterações" HorizontalAlignment="Left" Margin="50,305,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-3.104,0.169" Click="btnSalvar_Click" />
+        <Button x:Name="btnExcluir" Content="Excluir Paciente" HorizontalAlignment="Left" Margin="185,305,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.693,-0.875" Click="btnExcluir_Click" />
+
     </Grid>
 </Window>
