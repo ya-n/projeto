@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Model
 {
@@ -13,7 +8,7 @@ namespace Model
         [Required, StringLength(30)]
         public string Nome { get; set; }
         public string Nasc { get; set; }
-        [Required, StringLength(11)]   
+        [Required, MinLength(11), MaxLength(11)]   
         public string CPF { get; set; }
         public string End { get; set; }
         public string UF { get; set; }

@@ -17,7 +17,7 @@
         <TextBox x:Name="txtNasc" HorizontalAlignment="Left" Height="23" Margin="141,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
         <TextBox x:Name="txtUF" HorizontalAlignment="Left" Height="23" Margin="10,89,0,0" TextWrapping="Wrap" Text="UF:" VerticalAlignment="Top" Width="35"/>
-        <ComboBox x:Name="cbUF" HorizontalAlignment="Left" Margin="70,89,0,0" VerticalAlignment="Top" Width="120" Loaded="Window_Loaded_Loaded" />
+        <ComboBox x:Name="cbUF" HorizontalAlignment="Left" Margin="70,89,0,0" VerticalAlignment="Top" Width="120" Loaded="Window_Loaded_Loaded" SelectionChanged="cbUF_SelectionChanged" />
 
         <TextBlock HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Cidade:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="70,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>

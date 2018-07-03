@@ -73,12 +73,7 @@ namespace ViewProjeto
             medico = medicosController.BuscarPorID(txtCRM.Text);
             if (medico != null)
             {
-                txtNome.Text = medico.Nome;
-                txtCPF.Text = medico.CPF;
-                txtNasc.Text = medico.Nasc;
-                txtUF.Text = medico.UF;
-                txtCidade.Text = medico.Cidade;
-                txtEnd.Text = medico.End;
+                 
             }
         }
     }

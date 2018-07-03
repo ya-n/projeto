@@ -6,8 +6,13 @@
         xmlns:local="clr-namespace:ViewProjeto"
         mc:Ignorable="d"
         Title="ListarMedico" Height="300" Width="300" Loaded="Window_Loaded">
-    <Grid>
-        <DataGrid x:Name="dgMedicos" HorizontalAlignment="Left" Margin="75,75,0,0" VerticalAlignment="Top" Height="140" Width="165"/>
+    <Grid Margin="0,0,-340,-49">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="253*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgMedicos" Margin="78,59,0,0" VerticalAlignment="Top" Height="163" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="508"/>
 
     </Grid>
 </Window>

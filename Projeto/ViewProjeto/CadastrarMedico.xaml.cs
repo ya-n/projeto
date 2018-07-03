@@ -78,5 +78,7 @@ namespace ViewProjeto
             cbUF.Items.Add("SE");
             cbUF.Items.Add("TO");
         }
+
+        
     }
 }
