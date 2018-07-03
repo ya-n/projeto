@@ -38,7 +38,7 @@ namespace ViewProjeto
                 paciente.Nome = txtNome.Text;
                 paciente.CPF = txtCPF.Text;
                 paciente.Nasc = txtNasc.Text;
-                paciente.UF = txtUF.Text;
+                paciente.UF = cbUF.Text;
                 paciente.Cidade = txtCidade.Text;
                 paciente.End = txtEnd.Text;
                 paciente.FichaMedica = txtObs.Text;
@@ -83,7 +83,7 @@ namespace ViewProjeto
                 txtNome.Text = paciente.Nome;
                 txtCPF.Text = paciente.CPF;
                 txtNasc.Text = paciente.Nasc;
-                txtUF.Text = paciente.UF;
+                cbUF.Text = paciente.UF;
                 txtCidade.Text = paciente.Cidade;
                 txtEnd.Text = paciente.End;
                 txtObs.Text = paciente.FichaMedica;

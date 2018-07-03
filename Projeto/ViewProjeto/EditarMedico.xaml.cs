@@ -28,7 +28,7 @@ namespace ViewProjeto
                 medico.Nome = txtNome.Text;
                 medico.CPF = txtCPF.Text;
                 medico.Nasc = txtNasc.Text;
-                medico.UF = txtUF.Text;
+                medico.UF = cbUF.Text;
                 medico.Cidade = txtCidade.Text;
                 medico.End = txtEnd.Text;
                 medico.CRM = txtCRM.Text;
@@ -73,8 +73,15 @@ namespace ViewProjeto
             medico = medicosController.BuscarPorID(txtCRM.Text);
             if (medico != null)
             {
-                 
+                txtNome.Text = medico.Nome;
+                txtCPF.Text = medico.CPF;
+                txtNasc.Text = medico.Nasc;
+                cbUF.Text = medico.UF;   
+                txtCidade.Text = medico.Cidade;
+                txtEnd.Text = medico.End;
             }
         }
+
+       
     }
 }

@@ -46,11 +46,6 @@ namespace Controller
                 }
             }
 
-            //public IList<Paciente> ListarPorNome(string nome)
-           // {
-          //   return contexto.Pacientes.Where(p => p.Nome.ToLower() == nome.ToLower()).ToList();
-         //}
-
             public IList<Paciente> ListarTodos()
             {
                 return contexto.Pacientes.ToList();
